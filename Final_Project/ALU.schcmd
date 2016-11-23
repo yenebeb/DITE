@@ -1,0 +1,6 @@
+add instance muxf8 176 1520 R0 -sn=1
+select figure at 561 1548 8 -branches -sn=1
+select figure at 270 1402 8 -branches -sn=1
+move instance at 176 1520 to 32 1600 R0 -keepConn -sn=1
+select figure at 242 1433 8 -branches -sn=1
+delete selection -sn=1

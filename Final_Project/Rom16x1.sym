@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<symbol version="7" name="Rom16x1">
+    <symboltype>BLOCK</symboltype>
+    <timestamp>2016-11-23T10:31:15</timestamp>
+    <pin polarity="Input" x="0" y="-544" name="D0" />
+    <pin polarity="Input" x="0" y="-496" name="D1" />
+    <pin polarity="Input" x="256" y="-448" name="D10" />
+    <pin polarity="Input" x="256" y="-400" name="D11" />
+    <pin polarity="Input" x="256" y="-352" name="D12" />
+    <pin polarity="Input" x="256" y="-304" name="D13" />
+    <pin polarity="Input" x="256" y="-256" name="D14" />
+    <pin polarity="Input" x="256" y="-208" name="D15" />
+    <pin polarity="Input" x="0" y="-448" name="D2" />
+    <pin polarity="Input" x="0" y="-400" name="D3" />
+    <pin polarity="Input" x="0" y="-352" name="D4" />
+    <pin polarity="Input" x="0" y="-304" name="D5" />
+    <pin polarity="Input" x="0" y="-256" name="D6" />
+    <pin polarity="Input" x="0" y="-208" name="D7" />
+    <pin polarity="Input" x="256" y="-544" name="D8" />
+    <pin polarity="Input" x="256" y="-496" name="D9" />
+    <pin polarity="Output" x="256" y="-160" name="O" />
+    <pin polarity="Input" x="0" y="-160" name="S0" />
+    <pin polarity="Input" x="0" y="-112" name="S1" />
+    <pin polarity="Input" x="0" y="-64" name="S2" />
+    <pin polarity="Input" x="0" y="-16" name="S3" />
+    <graph>
+        <rect width="192" x="32" y="-560" height="560" />
+        <attrtext style="alignment:BCENTER;fontsize:24;fontname:Arial" attrname="SymbolName" x="128" y="-568" type="symbol" />
+        <line x2="0" y1="-544" y2="-544" x1="32" />
+        <attrtext attrname="PinName" x="40" y="-544" type="pin D0" />
+        <line x2="0" y1="-496" y2="-496" x1="32" />
+        <attrtext attrname="PinName" x="40" y="-496" type="pin D1" />
+        <line x2="256" y1="-448" y2="-448" x1="224" />
+        <attrtext style="alignment:RIGHT" attrname="PinName" x="216" y="-448" type="pin D10" />
+        <line x2="256" y1="-400" y2="-400" x1="224" />
+        <attrtext style="alignment:RIGHT" attrname="PinName" x="216" y="-400" type="pin D11" />
+        <line x2="256" y1="-352" y2="-352" x1="224" />
+        <attrtext style="alignment:RIGHT" attrname="PinName" x="216" y="-352" type="pin D12" />
+        <line x2="256" y1="-304" y2="-304" x1="224" />
+        <attrtext style="alignment:RIGHT" attrname="PinName" x="216" y="-304" type="pin D13" />
+        <line x2="256" y1="-256" y2="-256" x1="224" />
+        <attrtext style="alignment:RIGHT" attrname="PinName" x="216" y="-256" type="pin D14" />
+        <line x2="256" y1="-208" y2="-208" x1="224" />
+        <attrtext style="alignment:RIGHT" attrname="PinName" x="216" y="-208" type="pin D15" />
+        <line x2="0" y1="-448" y2="-448" x1="32" />
+        <attrtext attrname="PinName" x="40" y="-448" type="pin D2" />
+        <line x2="0" y1="-400" y2="-400" x1="32" />
+        <attrtext attrname="PinName" x="40" y="-400" type="pin D3" />
+        <line x2="0" y1="-352" y2="-352" x1="32" />
+        <attrtext attrname="PinName" x="40" y="-352" type="pin D4" />
+        <line x2="0" y1="-304" y2="-304" x1="32" />
+        <attrtext attrname="PinName" x="40" y="-304" type="pin D5" />
+        <line x2="0" y1="-256" y2="-256" x1="32" />
+        <attrtext attrname="PinName" x="40" y="-256" type="pin D6" />
+        <line x2="0" y1="-208" y2="-208" x1="32" />
+        <attrtext attrname="PinName" x="40" y="-208" type="pin D7" />
+        <line x2="256" y1="-544" y2="-544" x1="224" />
+        <attrtext style="alignment:RIGHT" attrname="PinName" x="216" y="-544" type="pin D8" />
+        <line x2="256" y1="-496" y2="-496" x1="224" />
+        <attrtext style="alignment:RIGHT" attrname="PinName" x="216" y="-496" type="pin D9" />
+        <line x2="256" y1="-160" y2="-160" x1="224" />
+        <attrtext style="alignment:RIGHT" attrname="PinName" x="216" y="-160" type="pin O" />
+        <line x2="0" y1="-160" y2="-160" x1="32" />
+        <attrtext attrname="PinName" x="40" y="-160" type="pin S0" />
+        <line x2="0" y1="-112" y2="-112" x1="32" />
+        <attrtext attrname="PinName" x="40" y="-112" type="pin S1" />
+        <line x2="0" y1="-64" y2="-64" x1="32" />
+        <attrtext attrname="PinName" x="40" y="-64" type="pin S2" />
+        <line x2="0" y1="-16" y2="-16" x1="32" />
+        <attrtext attrname="PinName" x="40" y="-16" type="pin S3" />
+    </graph>
+</symbol>

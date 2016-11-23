@@ -1,0 +1,36 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o C:/Users/Martijn/Downloads/DiTe/Final_Project/testbench_isim_beh.exe -prj C:/Users/Martijn/Downloads/DiTe/Final_Project/testbench_beh.prj work.testbench 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Users/Martijn/Downloads/DiTe/Final_Project/Right_Shift.vhf" into library work
+Parsing VHDL file "C:/Users/Martijn/Downloads/DiTe/Final_Project/mux4_2to1.vhf" into library work
+Parsing VHDL file "C:/Users/Martijn/Downloads/DiTe/Final_Project/Left_Shift.vhf" into library work
+Parsing VHDL file "C:/Users/Martijn/Downloads/DiTe/Final_Project/ALU.vhf" into library work
+Parsing VHDL file "C:/Users/Martijn/Downloads/DiTe/Final_Project/ALU_test.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling package vcomponents
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling architecture add4_hxilinx_alu_v of entity ADD4_HXILINX_ALU [add4_hxilinx_alu_default]
+Compiling architecture behavioral of entity BRLSHFT4_HXILINX_ALU [brlshft4_hxilinx_alu_default]
+Compiling architecture buf_v of entity BUF [buf_default]
+Compiling architecture behavioral of entity Left_Shift_MUSER_ALU [left_shift_muser_alu_default]
+Compiling architecture behavioral of entity Right_Shift_MUSER_ALU [right_shift_muser_alu_default]
+Compiling architecture inv4_hxilinx_alu_v of entity INV4_HXILINX_ALU [inv4_hxilinx_alu_default]
+Compiling architecture and2_v of entity AND2 [and2_default]
+Compiling architecture inv_v of entity INV [inv_default]
+Compiling architecture or2_v of entity OR2 [or2_default]
+Compiling architecture behavioral of entity mux4_2to1_MUSER_ALU [mux4_2to1_muser_alu_default]
+Compiling architecture behavioral of entity ALU [alu_default]
+Compiling architecture behavior of entity testbench
+Time Resolution for simulation is 1ps.
+Waiting for 2 sub-compilation(s) to finish...
+Compiled 29 VHDL Units
+Built simulation executable C:/Users/Martijn/Downloads/DiTe/Final_Project/testbench_isim_beh.exe
+Fuse Memory Usage: 47188 KB
+Fuse CPU Usage: 2592 ms

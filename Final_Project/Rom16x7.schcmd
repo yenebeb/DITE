@@ -1,0 +1,8 @@
+add instance mux4_2to1 992 944 R0 -sn=1
+add instance mux4_2to1 1536 944 R0 -sn=1
+select figure at 1673 826 8 -branches -sn=1
+move instance at 1536 944 to 1008 1200 R0 -keepConn -sn=1
+delete selection -sn=1
+select figure at 1124 864 8 -branches -sn=1
+delete selection -sn=1
+add instance muxcy 1040 992 R0 -sn=1

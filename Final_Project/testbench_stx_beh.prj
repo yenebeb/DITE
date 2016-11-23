@@ -1,0 +1,5 @@
+vhdl isim_temp "Right_Shift.vhf"
+vhdl isim_temp "mux4_2to1.vhf"
+vhdl isim_temp "Left_Shift.vhf"
+vhdl isim_temp "ALU.vhf"
+vhdl isim_temp "ALU_test.vhd"

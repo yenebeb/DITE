@@ -1,0 +1,5 @@
+vhdl work "Right_Shift.vhf"
+vhdl work "mux4_2to1.vhf"
+vhdl work "Left_Shift.vhf"
+vhdl work "ALU.vhf"
+vhdl work "ALU_test.vhd"
