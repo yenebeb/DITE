@@ -47,20 +47,10 @@
         <signal name="A(1)" />
         <signal name="A(2)" />
         <signal name="A(3)" />
-        <signal name="XLXN_61" />
-        <signal name="XLXN_62" />
         <signal name="XLXN_63" />
         <signal name="XLXN_64" />
-        <signal name="XLXN_65" />
-        <signal name="XLXN_66" />
         <signal name="XLXN_67" />
         <signal name="XLXN_1(3:0)" />
-        <signal name="XLXN_69(3:0)" />
-        <signal name="XLXN_70(3:0)" />
-        <signal name="XLXN_72" />
-        <signal name="XLXN_73" />
-        <signal name="XLXN_75(3:0)" />
-        <signal name="XLXN_76" />
         <signal name="XLXN_77" />
         <signal name="XLXN_78" />
         <signal name="XLXN_79" />
@@ -72,14 +62,8 @@
         <signal name="RomD(6)" />
         <signal name="RomD(5)" />
         <signal name="RomD(4)" />
-        <signal name="XLXN_88" />
-        <signal name="XLXN_89" />
-        <signal name="XLXN_90" />
-        <signal name="XLXN_91" />
-        <signal name="XLXN_94" />
         <signal name="XLXN_95(6:0)" />
-        <signal name="XLXN_43(6:0)" />
-        <signal name="XLXN_100" />
+        <signal name="XLXN_101" />
         <port polarity="Input" name="Clock" />
         <port polarity="Input" name="Reset" />
         <blockdef name="mux4_2to1">
@@ -149,25 +133,6 @@
             <line x2="384" y1="-288" y2="-288" x1="320" />
             <line x2="0" y1="-32" y2="-32" x1="64" />
         </blockdef>
-        <blockdef name="fd4re">
-            <timestamp>2000-1-1T10:10:10</timestamp>
-            <line x2="320" y1="-448" y2="-448" x1="384" />
-            <line x2="320" y1="-384" y2="-384" x1="384" />
-            <line x2="64" y1="-384" y2="-384" x1="0" />
-            <line x2="64" y1="-448" y2="-448" x1="0" />
-            <line x2="64" y1="-320" y2="-320" x1="0" />
-            <line x2="64" y1="-256" y2="-256" x1="0" />
-            <line x2="320" y1="-256" y2="-256" x1="384" />
-            <line x2="320" y1="-320" y2="-320" x1="384" />
-            <line x2="64" y1="-128" y2="-128" x1="0" />
-            <line x2="64" y1="-128" y2="-144" x1="80" />
-            <line x2="80" y1="-112" y2="-128" x1="64" />
-            <rect width="256" x="64" y="-512" height="448" />
-            <line x2="64" y1="-32" y2="-32" x1="192" />
-            <line x2="192" y1="-64" y2="-32" x1="192" />
-            <line x2="64" y1="-32" y2="-32" x1="0" />
-            <line x2="64" y1="-192" y2="-192" x1="0" />
-        </blockdef>
         <blockdef name="Instruction_Decoder">
             <timestamp>2016-11-23T12:49:48</timestamp>
             <rect width="256" x="64" y="-384" height="384" />
@@ -182,6 +147,21 @@
             <line x2="384" y1="-96" y2="-96" x1="320" />
             <line x2="384" y1="-160" y2="-160" x1="320" />
             <line x2="384" y1="-224" y2="-224" x1="320" />
+        </blockdef>
+        <blockdef name="Registers">
+            <timestamp>2016-11-24T14:38:33</timestamp>
+            <rect width="256" x="64" y="-384" height="384" />
+            <line x2="0" y1="-32" y2="-32" x1="64" />
+            <line x2="0" y1="-96" y2="-96" x1="64" />
+            <line x2="0" y1="-160" y2="-160" x1="64" />
+            <line x2="0" y1="-224" y2="-224" x1="64" />
+            <line x2="0" y1="-288" y2="-288" x1="64" />
+            <line x2="0" y1="-352" y2="-352" x1="64" />
+            <line x2="384" y1="-160" y2="-160" x1="320" />
+            <line x2="384" y1="-224" y2="-224" x1="320" />
+            <line x2="384" y1="-288" y2="-288" x1="320" />
+            <line x2="384" y1="-352" y2="-352" x1="320" />
+            <line x2="384" y1="-32" y2="-32" x1="320" />
         </blockdef>
         <block symbolname="mux4_2to1" name="XLXI_2">
             <blockpin signalname="XLXN_33" name="S" />
@@ -268,32 +248,6 @@
             <blockpin signalname="A(3)" name="Q3" />
             <blockpin signalname="Reset" name="RST" />
         </block>
-        <block symbolname="fd4re" name="Register_A">
-            <blockpin signalname="Clock" name="C" />
-            <blockpin signalname="XLXN_77" name="CE" />
-            <blockpin signalname="XLXN_2" name="D0" />
-            <blockpin signalname="XLXN_3" name="D1" />
-            <blockpin signalname="XLXN_4" name="D2" />
-            <blockpin signalname="XLXN_5" name="D3" />
-            <blockpin signalname="Reset" name="R" />
-            <blockpin signalname="XLXN_17" name="Q0" />
-            <blockpin signalname="XLXN_18" name="Q1" />
-            <blockpin signalname="XLXN_19" name="Q2" />
-            <blockpin signalname="XLXN_20" name="Q3" />
-        </block>
-        <block symbolname="fd4re" name="Register_B">
-            <blockpin signalname="Clock" name="C" />
-            <blockpin signalname="XLXN_78" name="CE" />
-            <blockpin signalname="XLXN_8" name="D0" />
-            <blockpin signalname="XLXN_9" name="D1" />
-            <blockpin signalname="XLXN_10" name="D2" />
-            <blockpin signalname="XLXN_11" name="D3" />
-            <blockpin signalname="Reset" name="R" />
-            <blockpin signalname="XLXN_36" name="Q0" />
-            <blockpin signalname="XLXN_37" name="Q1" />
-            <blockpin signalname="XLXN_38" name="Q2" />
-            <blockpin signalname="XLXN_39" name="Q3" />
-        </block>
         <block symbolname="Instruction_Decoder" name="XLXI_32">
             <blockpin signalname="XLXN_84" name="Control0" />
             <blockpin signalname="XLXN_83" name="Control1" />
@@ -306,6 +260,32 @@
             <blockpin signalname="RomD(4)" name="OPC0" />
             <blockpin signalname="RomD(5)" name="OPC1" />
             <blockpin signalname="RomD(6)" name="OPC2" />
+        </block>
+        <block symbolname="Registers" name="Register_A">
+            <blockpin signalname="Clock" name="C" />
+            <blockpin signalname="XLXN_77" name="CE" />
+            <blockpin signalname="XLXN_5" name="D0" />
+            <blockpin signalname="XLXN_4" name="D1" />
+            <blockpin signalname="XLXN_3" name="D2" />
+            <blockpin signalname="XLXN_2" name="D3" />
+            <blockpin signalname="XLXN_20" name="Q0" />
+            <blockpin signalname="XLXN_19" name="Q1" />
+            <blockpin signalname="XLXN_18" name="Q2" />
+            <blockpin signalname="XLXN_17" name="Q3" />
+            <blockpin signalname="Reset" name="R" />
+        </block>
+        <block symbolname="Registers" name="Register_B">
+            <blockpin signalname="Clock" name="C" />
+            <blockpin signalname="XLXN_78" name="CE" />
+            <blockpin signalname="XLXN_11" name="D0" />
+            <blockpin signalname="XLXN_10" name="D1" />
+            <blockpin signalname="XLXN_9" name="D2" />
+            <blockpin signalname="XLXN_8" name="D3" />
+            <blockpin signalname="XLXN_39" name="Q0" />
+            <blockpin signalname="XLXN_38" name="Q1" />
+            <blockpin signalname="XLXN_37" name="Q2" />
+            <blockpin signalname="XLXN_36" name="Q3" />
+            <blockpin signalname="Reset" name="R" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
@@ -538,9 +518,6 @@
             <wire x2="2160" y1="1488" y2="1488" x1="2144" />
             <wire x2="2208" y1="1488" y2="1488" x1="2160" />
         </branch>
-        <instance x="1008" y="1536" name="Register_B" orien="R0">
-            <attrtext style="fontsize:28;fontname:Arial" attrname="InstName" x="128" y="-304" type="instance" />
-        </instance>
         <bustap x2="960" y1="288" y2="288" x1="864" />
         <bustap x2="960" y1="352" y2="352" x1="864" />
         <bustap x2="960" y1="416" y2="416" x1="864" />
@@ -560,9 +537,6 @@
             <wire x2="1072" y1="1808" y2="1808" x1="464" />
             <wire x2="576" y1="432" y2="496" x1="576" />
         </branch>
-        <instance x="1008" y="736" name="Register_A" orien="R0">
-            <attrtext style="fontsize:28;fontname:Arial" attrname="InstName" x="128" y="-304" type="instance" />
-        </instance>
         <bustap x2="1504" y1="480" y2="480" x1="1600" />
         <bustap x2="1504" y1="416" y2="416" x1="1600" />
         <bustap x2="1504" y1="288" y2="288" x1="1600" />
@@ -581,13 +555,17 @@
         <branch name="Reset">
             <wire x2="272" y1="1344" y2="1344" x1="192" />
             <wire x2="272" y1="1344" y2="1504" x1="272" />
-            <wire x2="1008" y1="1504" y2="1504" x1="272" />
             <wire x2="272" y1="1504" y2="1584" x1="272" />
             <wire x2="1840" y1="1584" y2="1584" x1="272" />
             <wire x2="1840" y1="1584" y2="1744" x1="1840" />
             <wire x2="2208" y1="1744" y2="1744" x1="1840" />
+            <wire x2="1472" y1="1504" y2="1504" x1="272" />
             <wire x2="272" y1="704" y2="1344" x1="272" />
-            <wire x2="1008" y1="704" y2="704" x1="272" />
+            <wire x2="1472" y1="704" y2="704" x1="272" />
+            <wire x2="1472" y1="608" y2="608" x1="1392" />
+            <wire x2="1472" y1="608" y2="704" x1="1472" />
+            <wire x2="1472" y1="1408" y2="1408" x1="1392" />
+            <wire x2="1472" y1="1408" y2="1504" x1="1472" />
         </branch>
         <branch name="XLXN_77">
             <wire x2="1008" y1="544" y2="544" x1="992" />
@@ -676,5 +654,11 @@
             <wire x2="2384" y1="880" y2="880" x1="2320" />
             <wire x2="2320" y1="880" y2="1088" x1="2320" />
         </branch>
+        <instance x="1008" y="640" name="Register_A" orien="R0">
+            <attrtext style="fontsize:28;fontname:Arial" attrname="InstName" x="128" y="-224" type="instance" />
+        </instance>
+        <instance x="1008" y="1440" name="Register_B" orien="R0">
+            <attrtext style="fontsize:28;fontname:Arial" attrname="InstName" x="128" y="-208" type="instance" />
+        </instance>
     </sheet>
 </drawing>

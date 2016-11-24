@@ -23,27 +23,24 @@ ARCHITECTURE behavioral OF Right_Shift_Right_Shift_sch_tb IS
 
    COMPONENT Right_Shift
    PORT( O	:	OUT	STD_LOGIC_VECTOR (3 DOWNTO 0); 
-          I	:	IN	STD_LOGIC_VECTOR (3 DOWNTO 0); 
-          S	:	IN	STD_LOGIC);
+          I	:	IN	STD_LOGIC_VECTOR (3 DOWNTO 0)
+			 );
    END COMPONENT;
 
    SIGNAL O	:	STD_LOGIC_VECTOR (3 DOWNTO 0);
    SIGNAL I	:	STD_LOGIC_VECTOR (3 DOWNTO 0);
-   SIGNAL S	:	STD_LOGIC;
 
 BEGIN
 
    UUT: Right_Shift PORT MAP(
 		O => O, 
-		I => I, 
-		S => S
+		I => I
    );
 
 -- *** Test Bench - User Defined Section ***
    tb : PROCESS
    BEGIN
 		I <= "0110";
-		S <= '0', '1' after 100 ns;
       WAIT; -- will wait forever
    END PROCESS;
 -- *** End Test Bench - User Defined Section ***

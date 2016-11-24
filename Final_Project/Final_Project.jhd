@@ -11,3 +11,7 @@ MODULE Final_Project
 		INSTANCE XLXI_28
 	SUBMODULE Instruction_Decoder
 		INSTANCE XLXI_32
+	SUBMODULE Registers
+		INSTANCE Register_A
+	SUBMODULE Registers
+		INSTANCE Register_B

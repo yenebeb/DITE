@@ -10,17 +10,19 @@
          <ClosedNode>/Final_Project C:|Users|Martijn|Downloads|DiTe|Final_Project|Final_Project.sch/XLXI_24 - ALU</ClosedNode>
          <ClosedNode>/Final_Project C:|Users|Martijn|Downloads|DiTe|Final_Project|Final_Project.sch/XLXI_25 - Rom16x7</ClosedNode>
          <ClosedNode>/Final_Project C:|Users|Martijn|Downloads|DiTe|Final_Project|Final_Project.sch/XLXI_8 - Register_B</ClosedNode>
+         <ClosedNode>/Final_Project C:|Users|Martijn|git|DITE|Final_Project|Final_Project.sch/XLXI_24 - ALU</ClosedNode>
+         <ClosedNode>/Final_Project C:|Users|Martijn|git|DITE|Final_Project|Final_Project.sch/XLXI_25 - Rom16x7</ClosedNode>
          <ClosedNode>/Register_B C:|Users|Martijn|Downloads|DiTe|Final_Project|Register_B.sch</ClosedNode>
          <ClosedNode>/Rom16x7 C:|Users|Martijn|Downloads|DiTe|Final_Project|Rom16x7.sch</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>XLXI_24 - ALU (C:/Users/Martijn/Downloads/DiTe/Final_Project/ALU.sch)</SelectedItem>
+         <SelectedItem>Final_Project (C:/Users/Martijn/git/DITE/Final_Project/Final_Project.sch)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000017e000000020000000000000000000000000200000064ffffffff0000008100000003000000020000017e0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>XLXI_24 - ALU (C:/Users/Martijn/Downloads/DiTe/Final_Project/ALU.sch)</CurrentItem>
+      <CurrentItem>Final_Project (C:/Users/Martijn/git/DITE/Final_Project/Final_Project.sch)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_SCHEMATIC" guiview="Process" >
       <ClosedNodes>
@@ -36,7 +38,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000c9000000010000000100000000000000000000000064ffffffff000000810000000000000001000000c90000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000b8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000b80000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem></CurrentItem>
    </ItemView>

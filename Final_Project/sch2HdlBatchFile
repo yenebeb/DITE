@@ -1,1 +1,2 @@
-sch2hdl,-intstyle,ise,-family,virtex6,-flat,-suppress,-vhdl,C:/Users/Martijn/Downloads/DiTe/Final_Project/ALU.vhf,-w,C:/Users/Martijn/Downloads/DiTe/Final_Project/ALU.sch
+sch2hdl,-intstyle,ise,-family,virtex6,-flat,-suppress,-vhdl,C:/Users/Martijn/git/DITE/Final_Project/Right_Shift.vhf,-w,C:/Users/Martijn/git/DITE/Final_Project/Right_Shift.sch
+sch2hdl,-intstyle,ise,-family,virtex6,-flat,-suppress,-vhdl,C:/Users/Martijn/git/DITE/Final_Project/ALU.vhf,-w,C:/Users/Martijn/git/DITE/Final_Project/ALU.sch

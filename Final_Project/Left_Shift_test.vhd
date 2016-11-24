@@ -10,20 +10,17 @@ ARCHITECTURE behavioral OF Left_Shift_Left_Shift_sch_tb IS
    COMPONENT Left_Shift
    PORT( 
 			I : IN STD_LOGIC_VECTOR(3 downto 0);
-			S : IN STD_LOGIC;
 			O : OUT STD_LOGIC_VECTOR(3 downto 0)
 			);
    END COMPONENT;
 
 	SIGNAL I : STD_LOGIC_VECTOR(3 downto 0);
-	SIGNAL S : STD_LOGIC;
 	SIGNAL O : STD_LOGIC_VECTOR(3 downto 0);
 
 BEGIN
 
    UUT: Left_Shift PORT MAP(
 			I => I,
-			S => S,
 			O => O
    );
 
@@ -31,7 +28,6 @@ BEGIN
    tb : PROCESS
    BEGIN
 		I <= "0110";
-		S <= '0', '1' after 100 ns;
       WAIT; -- will wait forever
    END PROCESS;
 -- *** End Test Bench - User Defined Section ***
