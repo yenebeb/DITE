@@ -15,8 +15,6 @@
         <signal name="O(2)" />
         <signal name="O(1)" />
         <signal name="O(0)" />
-        <signal name="XLXN_20" />
-        <signal name="XLXN_23" />
         <port polarity="Output" name="O(3:0)" />
         <port polarity="Input" name="I(3:0)" />
         <blockdef name="constant">

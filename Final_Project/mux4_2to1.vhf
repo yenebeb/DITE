@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : mux4_2to1.vhf
--- /___/   /\     Timestamp : 11/22/2016 12:41:32
+-- /___/   /\     Timestamp : 11/28/2016 14:02:55
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -intstyle ise -family virtex6 -flat -suppress -vhdl C:/Users/Martijn/Downloads/DiTe/Final_Project/mux4_2to1.vhf -w C:/Users/Martijn/Downloads/DiTe/Final_Project/mux4_2to1.sch
+--Command: sch2hdl -intstyle ise -family virtex6 -flat -suppress -vhdl C:/Users/Martijn/git/DITE/Final_Project/mux4_2to1.vhf -w C:/Users/Martijn/git/DITE/Final_Project/mux4_2to1.sch
 --Design Name: mux4_2to1
 --Device: virtex6
 --Purpose:
@@ -69,12 +69,12 @@ architecture BEHAVIORAL of mux4_2to1 is
 begin
    XLXI_1 : AND2
       port map (I0=>X(0),
-                I1=>S,
+                I1=>XLXN_7,
                 O=>XLXN_8);
    
    XLXI_3 : AND2
       port map (I0=>Y(0),
-                I1=>XLXN_7,
+                I1=>S,
                 O=>XLXN_9);
    
    XLXI_6 : INV
@@ -88,12 +88,12 @@ begin
    
    XLXI_11 : AND2
       port map (I0=>X(1),
-                I1=>S,
+                I1=>XLXN_26,
                 O=>XLXN_27);
    
    XLXI_12 : AND2
       port map (I0=>Y(1),
-                I1=>XLXN_26,
+                I1=>S,
                 O=>XLXN_29);
    
    XLXI_13 : INV
@@ -107,12 +107,12 @@ begin
    
    XLXI_15 : AND2
       port map (I0=>X(2),
-                I1=>S,
+                I1=>XLXN_30,
                 O=>XLXN_31);
    
    XLXI_16 : AND2
       port map (I0=>Y(2),
-                I1=>XLXN_30,
+                I1=>S,
                 O=>XLXN_33);
    
    XLXI_17 : INV
@@ -126,12 +126,12 @@ begin
    
    XLXI_54 : AND2
       port map (I0=>X(3),
-                I1=>S,
+                I1=>XLXN_87,
                 O=>XLXN_84);
    
    XLXI_55 : AND2
       port map (I0=>Y(3),
-                I1=>XLXN_87,
+                I1=>S,
                 O=>XLXN_86);
    
    XLXI_56 : OR2

@@ -11,16 +11,17 @@
          <ClosedNode>/Final_Project C:|Users|Martijn|Downloads|DiTe|Final_Project|Final_Project.sch/XLXI_25 - Rom16x7</ClosedNode>
          <ClosedNode>/Final_Project C:|Users|Martijn|Downloads|DiTe|Final_Project|Final_Project.sch/XLXI_8 - Register_B</ClosedNode>
          <ClosedNode>/Final_Project C:|Users|Martijn|git|DITE|Final_Project|Final_Project.sch/XLXI_24 - ALU</ClosedNode>
-         <ClosedNode>/Final_Project C:|Users|Martijn|git|DITE|Final_Project|Final_Project.sch/XLXI_25 - Rom16x7</ClosedNode>
+         <ClosedNode>/Final_Project C:|Users|Martijn|git|DITE|Final_Project|Final_Project.sch/XLXI_24 - ALU/XLXI_39 - mux4_4to1</ClosedNode>
          <ClosedNode>/Register_B C:|Users|Martijn|Downloads|DiTe|Final_Project|Register_B.sch</ClosedNode>
          <ClosedNode>/Rom16x7 C:|Users|Martijn|Downloads|DiTe|Final_Project|Rom16x7.sch</ClosedNode>
+         <ClosedNode>/mux4_4to1 C:|Users|Martijn|git|DITE|Final_Project|mux4_4to1.sch</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
          <SelectedItem>Final_Project (C:/Users/Martijn/git/DITE/Final_Project/Final_Project.sch)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000017e000000020000000000000000000000000200000064ffffffff0000008100000003000000020000017e0000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001bb000000020000000000000000000000000200000064ffffffff000000810000000300000002000001bb0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
       <CurrentItem>Final_Project (C:/Users/Martijn/git/DITE/Final_Project/Final_Project.sch)</CurrentItem>
    </ItemView>
@@ -28,7 +29,7 @@
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
          <ClosedNode>Configure Target Device</ClosedNode>
-         <ClosedNode>Design Utilities</ClosedNode>
+         <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
          <ClosedNode>Implement Design</ClosedNode>
          <ClosedNode>Synthesize - XST</ClosedNode>
          <ClosedNode>User Constraints</ClosedNode>
@@ -38,7 +39,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000b8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000b80000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000c1000000010000000100000000000000000000000064ffffffff000000810000000000000001000000c10000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem></CurrentItem>
    </ItemView>
@@ -49,7 +50,7 @@
       <SelectedItems/>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000000000000000100000000000000000000000000000000000002e3000000040101000100000000000000000000000064ffffffff0000008100000000000000040000007500000001000000000000004300000001000000000000005d0000000100000000000001ce0000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000000000000000100000000000000000000000000000000000002d2000000040101000100000000000000000000000064ffffffff0000008100000000000000040000007500000001000000000000004300000001000000000000005d0000000100000000000001bd0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>ALU.sch</CurrentItem>
    </ItemView>
@@ -60,11 +61,56 @@
       <SelectedItems/>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000000000000000100000000000000000000000000000000000000c9000000010001000100000000000000000000000064ffffffff000000810000000000000001000000c90000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000000000000000100000000000000000000000000000000000000d2000000010001000100000000000000000000000064ffffffff000000810000000000000001000000d20000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>work</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Update All Schematic Files</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000d2000000010000000100000000000000000000000064ffffffff000000810000000000000001000000d20000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Update All Schematic Files</CurrentItem>
+   </ItemView>
+   <SourceProcessView>000000ff00000000000000020000011d0000008501000000050100000002</SourceProcessView>
+   <CurrentView>Behavioral Simulation</CurrentView>
+   <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/Final_Project C:|Users|Martijn|git|DITE|Final_Project|Final_Project.sch</ClosedNode>
+         <ClosedNode>/Final_Project C:|Users|Martijn|git|DITE|Final_Project|Final_Project.sch/XLXI_24 - ALU</ClosedNode>
+         <ClosedNode>/Final_Project C:|Users|Martijn|git|DITE|Final_Project|Final_Project.sch/XLXI_25 - Rom16x7</ClosedNode>
+         <ClosedNode>/Final_Project_Final_Project_sch_tb - behavioral C:|Users|Martijn|git|DITE|Final_Project|Final_Project_test.vhd/UUT - Final_Project</ClosedNode>
+         <ClosedNode>/Left_Shift_Left_Shift_sch_tb - behavioral C:|Users|Martijn|git|DITE|Final_Project|Left_Shift_test.vhd</ClosedNode>
+         <ClosedNode>/Program_Counter_Program_Counter_sch_tb - behavioral C:|Users|Martijn|git|DITE|Final_Project|Program_Counter_test.vhd</ClosedNode>
+         <ClosedNode>/Register_A C:|Users|Martijn|git|DITE|Final_Project|Register_A.sch</ClosedNode>
+         <ClosedNode>/Registers_Registers_sch_tb - behavioral C:|Users|Martijn|git|DITE|Final_Project|Registers_test.vhd</ClosedNode>
+         <ClosedNode>/Right_Shift_Right_Shift_sch_tb - behavioral C:|Users|Martijn|git|DITE|Final_Project|Right_Shift_test.vhd</ClosedNode>
+         <ClosedNode>/Rom16x7_Rom16x7_sch_tb - behavioral C:|Users|Martijn|git|DITE|Final_Project|Rom16x7_test.vhd</ClosedNode>
+         <ClosedNode>/mux4_2to1_mux4_2to1_sch_tb - behavioral C:|Users|Martijn|git|DITE|Final_Project|mux4_2to1_test.vhd</ClosedNode>
+         <ClosedNode>/mux4_4to1 C:|Users|Martijn|git|DITE|Final_Project|mux4_4to1.sch</ClosedNode>
+         <ClosedNode>/mux4_4to1_mux4_4to1_sch_tb - behavioral C:|Users|Martijn|git|DITE|Final_Project|mux4_4to1_test.vhd</ClosedNode>
+         <ClosedNode>/mux4_4to1_mux4_4to1_sch_tb - behavioral C:|Users|Martijn|git|DITE|Final_Project|mux4_4to1_test.vhd/UUT - mux4_4to1</ClosedNode>
+         <ClosedNode>/testbench - behavior C:|Users|Martijn|git|DITE|Final_Project|ALU_test.vhd/uut - ALU</ClosedNode>
+         <ClosedNode>/testbench - behavior C:|Users|Martijn|git|DITE|Final_Project|ALU_test.vhd/uut - ALU/XLXI_39 - mux4_4to1</ClosedNode>
+         <ClosedNode>/testbench - behavior C:|Users|Martijn|git|DITE|Final_Project|Final_Project_test.vhd</ClosedNode>
+         <ClosedNode>/testbench - behavior C:|Users|Martijn|git|DITE|Final_Project|Rom16x7_test.vhd</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000022a000000020000000000000000000000000200000064ffffffff0000008100000003000000020000022a0000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>UUT - Instruction_Decoder (C:/Users/Martijn/git/DITE/Final_Project/Instruction_Decoder.sch)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
          <ClosedNode>Design Utilities</ClosedNode>
@@ -74,10 +120,34 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000c9000000010000000100000000000000000000000064ffffffff000000810000000000000001000000c90000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000d2000000010000000100000000000000000000000064ffffffff000000810000000000000001000000d20000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem></CurrentItem>
    </ItemView>
-   <SourceProcessView>000000ff00000000000000020000011d0000008501000000050100000002</SourceProcessView>
-   <CurrentView>Implementation</CurrentView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_SCHEMATIC" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000d2000000010000000100000000000000000000000064ffffffff000000810000000000000001000000d20000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000d2000000010000000100000000000000000000000064ffffffff000000810000000000000001000000d20000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
 </Project>

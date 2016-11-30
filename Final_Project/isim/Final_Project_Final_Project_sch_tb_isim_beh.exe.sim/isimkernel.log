@@ -1,0 +1,42 @@
+Command line:
+   Final_Project_Final_Project_sch_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  51977
+
+Wed Nov 30 11:39:16 2016
+
+
+ Elaboration Time: 0.203125 sec
+
+ Current Memory Usage: 362.689 Meg
+
+ Total Signals          : 650
+ Total Nets             : 206
+ Total Signal Drivers   : 171
+ Total Blocks           : 150
+ Total Primitive Blocks : 134
+ Total Processes        : 166
+ Total Traceable Variables  : 144
+ Total Scalar Nets and Variables : 5178
+Total Line Count : 250
+Total Line Count : 250
+Total Line Count : 250
+Total Line Count : 250
+Total Line Count : 250
+Total Line Count : 250
+Total Line Count : 250
+Total Line Count : 250
+Total Line Count : 250
+Total Line Count : 250
+Total Line Count : 250
+Total Line Count : 250
+Total Line Count : 250
+Total Line Count : 250
+
+ Total Simulation Time: 0.734375 sec
+
+ Current Memory Usage: 362.689 Meg
+
+Wed Nov 30 12:56:13 2016
+

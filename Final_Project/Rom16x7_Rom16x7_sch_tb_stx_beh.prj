@@ -1,0 +1,3 @@
+vhdl isim_temp "Rom16x7.vhf"
+vhdl isim_temp "Rom16x7_test.vhd"
+vhdl isim_temp "D_flip_flop.vhf"

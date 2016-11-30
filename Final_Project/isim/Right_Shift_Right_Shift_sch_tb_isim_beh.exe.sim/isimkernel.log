@@ -1,15 +1,15 @@
 Command line:
    Right_Shift_Right_Shift_sch_tb_isim_beh.exe
      -simmode  gui
-     -simrunnum  0
-     -socket  49568
+     -simrunnum  1
+     -socket  52004
 
-Thu Nov 24 16:01:01 2016
+Wed Nov 30 11:53:34 2016
 
 
  Elaboration Time: 0.140625 sec
 
- Current Memory Usage: 358.105 Meg
+ Current Memory Usage: 358.052 Meg
 
  Total Signals          : 35
  Total Nets             : 33
@@ -21,9 +21,9 @@ Thu Nov 24 16:01:01 2016
  Total Scalar Nets and Variables : 516
 Total Line Count : 6
 
- Total Simulation Time: 0.15625 sec
+ Total Simulation Time: 0.140625 sec
 
- Current Memory Usage: 358.105 Meg
+ Current Memory Usage: 358.052 Meg
 
-Thu Nov 24 16:01:22 2016
+Wed Nov 30 11:53:59 2016
 

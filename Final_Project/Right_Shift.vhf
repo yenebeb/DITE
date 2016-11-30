@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : Right_Shift.vhf
--- /___/   /\     Timestamp : 11/24/2016 16:00:41
+-- /___/   /\     Timestamp : 11/28/2016 13:58:10
 -- \   \  /  \ 
 --  \___\/\___\ 
 --

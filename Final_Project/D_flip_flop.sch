@@ -11,8 +11,7 @@
         <signal name="Clk" />
         <signal name="XLXN_5" />
         <signal name="XLXN_6" />
-        <signal name="not_Q">
-        </signal>
+        <signal name="not_Q" />
         <signal name="Q" />
         <signal name="R" />
         <port polarity="Input" name="D" />
