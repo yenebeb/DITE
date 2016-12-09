@@ -1,9 +1,41 @@
-select figure at 3092 1025 8 -branches -sn=1
-select figure at 3092 1025 8 -branches -all -sn=1
-select figure at 3737 914 8 -branches -toggle -sn=1
-select figure at 4258 909 8 -branches -toggle -sn=1
-select figure at 3061 994 8 -branches -sn=1
-select figure at 3061 994 8 -branches -all -sn=1
-select figure at 4158 1002 8 -branches -sn=1
-select figure at 4158 1002 8 -branches -sn=1
-select figure at 4158 1002 8 -branches -all -sn=1
+select figure at 542 937 8 -branches -sn=1
+select figure at 542 937 8 -branches -all -sn=1
+select figure at 301 628 8 -branches -sn=1
+select figure at 792 708 8 -branches -sn=1
+select figure at 383 945 8 -branches -sn=1
+select figure at 342 941 8 -branches -sn=1
+select figure at 342 941 8 -branches -sn=1
+select figure at 499 984 8 -branches -sn=1
+select figure at 499 984 8 -branches -all -sn=1
+add atwin 240 1212 432 992 8 INIT -sn=1
+select figure at 403 1215 8 -branches -sn=1
+select figure at 372 1215 8 -branches -sn=1
+select figure at 298 1218 8 -branches -sn=1
+select figure at 297 1209 8 -branches -sn=1
+select figure at 390 1233 8 -branches -sn=1
+select figure at 377 1265 8 -branches -sn=1
+select figure at 395 1207 8 -branches -sn=1
+select figure at 314 1195 8 -branches -sn=1
+select figure at 253 1195 8 -branches -sn=1
+select figure at 247 1215 8 -branches -sn=1
+select figure at 248 1221 8 -branches -sn=1
+move iawin at 176 800 412 -64 INIT to 540 -400 -sn=1
+select figure at 219 1301 8 -branches -sn=1
+select all in 219 1301 626 1353 -branches -enclosed -sn=1
+select figure at 626 1353 8 -branches -sn=1
+undo
+undo
+undo
+undo
+select figure at 583 1593 8 -branches -sn=1
+move bawin at 560 1600 to 560 1200 -sn=1
+select figure at 520 640 8 -branches -sn=1
+select figure at 521 640 8 -branches -all -sn=1
+move bawin at 496 640 to 496 720 -sn=1
+select figure at 451 645 8 -branches -sn=1
+move bawin at 432 640 to 432 720 -sn=1
+select figure at 388 635 8 -branches -sn=1
+move bawin at 368 640 to 368 720 -sn=1
+select figure at 586 680 8 -branches -sn=1
+move bawin at 560 672 to 560 720 -sn=1
+select figure at 648 789 8 -branches -sn=1

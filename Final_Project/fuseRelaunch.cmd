@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -lib "secureip" -o "C:/Users/Martijn/git/DITE/Final_Project/testbench_isim_beh.exe" -prj "C:/Users/Martijn/git/DITE/Final_Project/testbench_beh.prj" "work.testbench" 
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Users/Martijn/git/DITE/Final_Project/Rom16x7_Rom16x7_sch_tb_isim_beh.exe" -prj "C:/Users/Martijn/git/DITE/Final_Project/Rom16x7_Rom16x7_sch_tb_beh.prj" "work.Rom16x7_Rom16x7_sch_tb" 

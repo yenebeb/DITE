@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : mux4_4to1.vhf
--- /___/   /\     Timestamp : 11/28/2016 14:02:55
+-- /___/   /\     Timestamp : 12/01/2016 14:02:13
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -176,20 +176,20 @@ architecture BEHAVIORAL of mux4_4to1 is
 begin
    XLXI_1 : mux4_2to1_MUSER_mux4_4to1
       port map (S=>S1,
-                X(3 downto 0)=>C(3 downto 0),
-                Y(3 downto 0)=>A(3 downto 0),
+                X(3 downto 0)=>A(3 downto 0),
+                Y(3 downto 0)=>C(3 downto 0),
                 Z(3 downto 0)=>XLXN_1(3 downto 0));
    
    XLXI_2 : mux4_2to1_MUSER_mux4_4to1
       port map (S=>S1,
-                X(3 downto 0)=>D(3 downto 0),
-                Y(3 downto 0)=>B(3 downto 0),
+                X(3 downto 0)=>B(3 downto 0),
+                Y(3 downto 0)=>D(3 downto 0),
                 Z(3 downto 0)=>XLXN_2(3 downto 0));
    
    XLXI_3 : mux4_2to1_MUSER_mux4_4to1
       port map (S=>S0,
-                X(3 downto 0)=>XLXN_2(3 downto 0),
-                Y(3 downto 0)=>XLXN_1(3 downto 0),
+                X(3 downto 0)=>XLXN_1(3 downto 0),
+                Y(3 downto 0)=>XLXN_2(3 downto 0),
                 Z(3 downto 0)=>O(3 downto 0));
    
 end BEHAVIORAL;

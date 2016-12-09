@@ -144,7 +144,7 @@
             </attr>
             <blockpin signalname="CI" name="O" />
         </block>
-        <block symbolname="mux4_4to1" name="XLXI_39">
+        <block symbolname="mux4_4to1" name="mux44to1">
             <blockpin signalname="X(3:0)" name="A(3:0)" />
             <blockpin signalname="Z(3:0)" name="B(3:0)" />
             <blockpin signalname="S0" name="S0" />
@@ -153,7 +153,7 @@
             <blockpin signalname="S1" name="S1" />
             <blockpin signalname="O(3:0)" name="O(3:0)" />
         </block>
-        <block symbolname="add4" name="XLXI_1">
+        <block symbolname="add4" name="Adder">
             <blockpin signalname="A(0)" name="A0" />
             <blockpin signalname="A(1)" name="A1" />
             <blockpin signalname="A(2)" name="A2" />
@@ -170,15 +170,15 @@
             <blockpin signalname="X(2)" name="S2" />
             <blockpin signalname="X(3)" name="S3" />
         </block>
-        <block symbolname="Right_Shift" name="XLXI_44">
+        <block symbolname="Right_Shift" name="RightShift">
             <blockpin signalname="A(3:0)" name="I(3:0)" />
             <blockpin signalname="Z(3:0)" name="O(3:0)" />
         </block>
-        <block symbolname="Left_Shift" name="XLXI_43">
+        <block symbolname="Left_Shift" name="LeftShift">
             <blockpin signalname="A(3:0)" name="I(3:0)" />
             <blockpin signalname="W(3:0)" name="O(3:0)" />
         </block>
-        <block symbolname="inv4" name="XLXI_7">
+        <block symbolname="inv4" name="Inverter">
             <blockpin signalname="A(3)" name="I0" />
             <blockpin signalname="A(2)" name="I1" />
             <blockpin signalname="A(1)" name="I2" />
@@ -221,7 +221,7 @@
         </branch>
         <iomarker fontsize="28" x="1968" y="1296" name="CO" orien="R0" />
         <iomarker fontsize="28" x="1968" y="1232" name="OFL" orien="R0" />
-        <instance x="1488" y="1360" name="XLXI_1" orien="R0" />
+        <instance x="1488" y="1360" name="Adder" orien="R0" />
         <branch name="A(0)">
             <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="1472" y="656" type="branch" />
             <wire x2="1472" y1="656" y2="656" x1="1440" />
@@ -300,7 +300,7 @@
             <wire x2="1264" y1="1520" y2="1600" x1="1264" />
             <wire x2="2368" y1="1520" y2="1520" x1="1264" />
         </branch>
-        <instance x="2368" y="1680" name="XLXI_39" orien="R0">
+        <instance x="2368" y="1680" name="mux44to1" orien="R0">
         </instance>
         <branch name="X(3:0)">
             <wire x2="2144" y1="816" y2="880" x1="2144" />
@@ -345,7 +345,7 @@
             <wire x2="1024" y1="1808" y2="1808" x1="976" />
             <wire x2="1040" y1="1808" y2="1808" x1="1024" />
         </branch>
-        <instance x="752" y="2032" name="XLXI_7" orien="R0" />
+        <instance x="752" y="2032" name="Inverter" orien="R0" />
         <bustap x2="688" y1="2000" y2="2000" x1="592" />
         <bustap x2="688" y1="1936" y2="1936" x1="592" />
         <bustap x2="688" y1="1872" y2="1872" x1="592" />
@@ -386,9 +386,9 @@
             <wire x2="2592" y1="1680" y2="1712" x1="2592" />
         </branch>
         <iomarker fontsize="28" x="2592" y="1712" name="S1" orien="R90" />
-        <instance x="816" y="1632" name="XLXI_43" orien="R0">
+        <instance x="816" y="1632" name="LeftShift" orien="R0">
         </instance>
-        <instance x="816" y="1408" name="XLXI_44" orien="R0">
+        <instance x="816" y="1408" name="RightShift" orien="R0">
         </instance>
     </sheet>
 </drawing>

@@ -18,28 +18,24 @@
          </top_modules>
       </db_ref>
    </db_ref_list>
-   <WVObjectSize size="17" />
+   <WVObjectSize size="13" />
    <wvobject fp_name="/final_project_final_project_sch_tb/UUT/RomD16x7/d" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">d[6:0]</obj_property>
       <obj_property name="ObjectShortName">d[6:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/final_project_final_project_sch_tb/clock" type="logic" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
       <obj_property name="ElementShortName">clock</obj_property>
       <obj_property name="ObjectShortName">clock</obj_property>
+      <obj_property name="label">clock</obj_property>
    </wvobject>
-   <wvobject fp_name="/final_project_final_project_sch_tb/UUT/MuxA/x" type="array" db_ref_id="1">
-      <obj_property name="DisplayName">label</obj_property>
-      <obj_property name="ElementShortName">x[3:0]</obj_property>
-      <obj_property name="ObjectShortName">x[3:0]</obj_property>
-      <obj_property name="label">x[3:0]</obj_property>
+   <wvobject fp_name="/final_project_final_project_sch_tb/UUT/ProgramCounter/carry" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">carry</obj_property>
+      <obj_property name="ObjectShortName">carry</obj_property>
    </wvobject>
-   <wvobject fp_name="/final_project_final_project_sch_tb/UUT/MuxA/y" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">y[3:0]</obj_property>
-      <obj_property name="ObjectShortName">y[3:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/final_project_final_project_sch_tb/UUT/MuxA/z" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">z[3:0]</obj_property>
-      <obj_property name="ObjectShortName">z[3:0]</obj_property>
+   <wvobject fp_name="/final_project_final_project_sch_tb/UUT/ProgramCounter/ld" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ld</obj_property>
+      <obj_property name="ObjectShortName">ld</obj_property>
    </wvobject>
    <wvobject fp_name="/final_project_final_project_sch_tb/UUT/Register_A/ce" type="logic" db_ref_id="1">
       <obj_property name="DisplayName">label</obj_property>
@@ -97,18 +93,6 @@
          <obj_property name="CustomSignalColor">#ff0000</obj_property>
       </wvobject>
    </wvobject>
-   <wvobject fp_name="/final_project_final_project_sch_tb/UUT/MuxB/x" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">x[3:0]</obj_property>
-      <obj_property name="ObjectShortName">x[3:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/final_project_final_project_sch_tb/UUT/MuxB/y" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">y[3:0]</obj_property>
-      <obj_property name="ObjectShortName">y[3:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/final_project_final_project_sch_tb/UUT/MuxB/z" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">z[3:0]</obj_property>
-      <obj_property name="ObjectShortName">z[3:0]</obj_property>
-   </wvobject>
    <wvobject fp_name="/final_project_final_project_sch_tb/UUT/Register_B/ce" type="logic" db_ref_id="1">
       <obj_property name="DisplayName">label</obj_property>
       <obj_property name="ElementShortName">ce</obj_property>
@@ -165,64 +149,16 @@
          <obj_property name="CustomSignalColor">#ff0000</obj_property>
       </wvobject>
    </wvobject>
-   <wvobject fp_name="vbus73" type="vbus" db_ref_id="1">
-      <obj_property name="label">ALU_a(3:0)</obj_property>
-      <obj_property name="DisplayName">label</obj_property>
-      <wvobject fp_name="/final_project_final_project_sch_tb/UUT/ALUnit/a[3]" type="logic" db_ref_id="1">
-         <obj_property name="ElementShortName">[3]</obj_property>
-         <obj_property name="ObjectShortName">a[3]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/final_project_final_project_sch_tb/UUT/ALUnit/a[1]" type="logic" db_ref_id="1">
-         <obj_property name="ElementShortName">[1]</obj_property>
-         <obj_property name="ObjectShortName">a[1]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/final_project_final_project_sch_tb/UUT/ALUnit/a[2]" type="logic" db_ref_id="1">
-         <obj_property name="ElementShortName">[2]</obj_property>
-         <obj_property name="ObjectShortName">a[2]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/final_project_final_project_sch_tb/UUT/ALUnit/a[0]" type="logic" db_ref_id="1">
-         <obj_property name="ElementShortName">[0]</obj_property>
-         <obj_property name="ObjectShortName">a[0]</obj_property>
-      </wvobject>
+   <wvobject fp_name="/final_project_final_project_sch_tb/UUT/Status_Reg/d" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">d</obj_property>
+      <obj_property name="ObjectShortName">d</obj_property>
    </wvobject>
-   <wvobject fp_name="vbus78" type="vbus" db_ref_id="1">
-      <obj_property name="label">AU_b(3:0)</obj_property>
-      <obj_property name="DisplayName">label</obj_property>
-      <wvobject fp_name="/final_project_final_project_sch_tb/UUT/ALUnit/b[3]" type="logic" db_ref_id="1">
-         <obj_property name="ElementShortName">[3]</obj_property>
-         <obj_property name="ObjectShortName">b[3]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/final_project_final_project_sch_tb/UUT/ALUnit/b[2]" type="logic" db_ref_id="1">
-         <obj_property name="ElementShortName">[2]</obj_property>
-         <obj_property name="ObjectShortName">b[2]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/final_project_final_project_sch_tb/UUT/ALUnit/b[1]" type="logic" db_ref_id="1">
-         <obj_property name="ElementShortName">[1]</obj_property>
-         <obj_property name="ObjectShortName">b[1]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/final_project_final_project_sch_tb/UUT/ALUnit/b[0]" type="logic" db_ref_id="1">
-         <obj_property name="ElementShortName">[0]</obj_property>
-         <obj_property name="ObjectShortName">b[0]</obj_property>
-      </wvobject>
+   <wvobject fp_name="/final_project_final_project_sch_tb/UUT/Status_Reg/ce" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ce</obj_property>
+      <obj_property name="ObjectShortName">ce</obj_property>
    </wvobject>
-   <wvobject fp_name="vbus83" type="vbus" db_ref_id="1">
-      <obj_property name="label">ALU_o(3:0)</obj_property>
-      <obj_property name="DisplayName">label</obj_property>
-      <wvobject fp_name="/final_project_final_project_sch_tb/UUT/ALUnit/o[3]" type="logic" db_ref_id="1">
-         <obj_property name="ElementShortName">[3]</obj_property>
-         <obj_property name="ObjectShortName">o[3]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/final_project_final_project_sch_tb/UUT/ALUnit/o[2]" type="logic" db_ref_id="1">
-         <obj_property name="ElementShortName">[2]</obj_property>
-         <obj_property name="ObjectShortName">o[2]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/final_project_final_project_sch_tb/UUT/ALUnit/o[1]" type="logic" db_ref_id="1">
-         <obj_property name="ElementShortName">[1]</obj_property>
-         <obj_property name="ObjectShortName">o[1]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/final_project_final_project_sch_tb/UUT/ALUnit/o[0]" type="logic" db_ref_id="1">
-         <obj_property name="ElementShortName">[0]</obj_property>
-         <obj_property name="ObjectShortName">o[0]</obj_property>
-      </wvobject>
+   <wvobject fp_name="/final_project_final_project_sch_tb/UUT/Status_Reg/q" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">q</obj_property>
+      <obj_property name="ObjectShortName">q</obj_property>
    </wvobject>
 </wave_config>

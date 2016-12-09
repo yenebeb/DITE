@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : Final_Project.vhf
--- /___/   /\     Timestamp : 11/30/2016 11:38:50
+-- /___/   /\     Timestamp : 12/03/2016 19:23:44
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -243,13 +243,12 @@ architecture BEHAVIORAL of Rom16x7_MUSER_Final_Project is
    attribute INIT of ROM32X1 : component is "00000000";
    attribute BOX_TYPE of ROM32X1 : component is "BLACK_BOX";
    
-   attribute INIT of ROM1 : label is "00000103";
-   attribute INIT of ROM2 : label is "00000100";
-   attribute INIT of ROM3 : label is "00000001";
-   attribute INIT of ROM4 : label is "00000021";
-   attribute INIT of ROM5 : label is "000001CA";
-   attribute INIT of ROM6 : label is "00000344";
-   attribute INIT of ROM7 : label is "0000079C";
+   attribute INIT of ROM1 : label is "00000068";
+   attribute INIT of ROM3 : label is "00000008";
+   attribute INIT of ROM4 : label is "00000049";
+   attribute INIT of ROM5 : label is "000002FA";
+   attribute INIT of ROM6 : label is "00000146";
+   attribute INIT of ROM7 : label is "000007D4";
 begin
    XLXN_1 <= '0';
    XLXN_3 <= '0';
@@ -260,7 +259,7 @@ begin
    XLXN_9 <= '0';
    ROM1 : ROM32X1
    -- synopsys translate_off
-   generic map( INIT => x"00000103")
+   generic map( INIT => x"00000068")
    -- synopsys translate_on
       port map (A0=>A(0),
                 A1=>A(1),
@@ -271,7 +270,7 @@ begin
    
    ROM2 : ROM32X1
    -- synopsys translate_off
-   generic map( INIT => x"00000100")
+   generic map( INIT => x"00000000")
    -- synopsys translate_on
       port map (A0=>A(0),
                 A1=>A(1),
@@ -282,7 +281,7 @@ begin
    
    ROM3 : ROM32X1
    -- synopsys translate_off
-   generic map( INIT => x"00000001")
+   generic map( INIT => x"00000008")
    -- synopsys translate_on
       port map (A0=>A(0),
                 A1=>A(1),
@@ -293,7 +292,7 @@ begin
    
    ROM4 : ROM32X1
    -- synopsys translate_off
-   generic map( INIT => x"00000021")
+   generic map( INIT => x"00000049")
    -- synopsys translate_on
       port map (A0=>A(0),
                 A1=>A(1),
@@ -304,7 +303,7 @@ begin
    
    ROM5 : ROM32X1
    -- synopsys translate_off
-   generic map( INIT => x"000001CA")
+   generic map( INIT => x"000002FA")
    -- synopsys translate_on
       port map (A0=>A(0),
                 A1=>A(1),
@@ -315,7 +314,7 @@ begin
    
    ROM6 : ROM32X1
    -- synopsys translate_off
-   generic map( INIT => x"00000344")
+   generic map( INIT => x"00000146")
    -- synopsys translate_on
       port map (A0=>A(0),
                 A1=>A(1),
@@ -326,7 +325,7 @@ begin
    
    ROM7 : ROM32X1
    -- synopsys translate_off
-   generic map( INIT => x"0000079C")
+   generic map( INIT => x"000007D4")
    -- synopsys translate_on
       port map (A0=>A(0),
                 A1=>A(1),
@@ -433,9 +432,9 @@ architecture BEHAVIORAL of Instruction_Decoder_MUSER_Final_Project is
    signal XLXN_96        : std_logic;
    signal XLXN_98        : std_logic;
    signal XLXN_100       : std_logic;
-   signal XLXN_101       : std_logic;
    signal XLXN_103       : std_logic;
    signal Control2_DUMMY : std_logic;
+   signal Control7_DUMMY : std_logic;
    component D3_8E_HXILINX_Final_Project
       port ( A0 : in    std_logic; 
              A1 : in    std_logic; 
@@ -474,18 +473,11 @@ architecture BEHAVIORAL of Instruction_Decoder_MUSER_Final_Project is
    end component;
    attribute BOX_TYPE of OR5 : component is "BLACK_BOX";
    
-   component OR3
-      port ( I0 : in    std_logic; 
-             I1 : in    std_logic; 
-             I2 : in    std_logic; 
-             O  : out   std_logic);
-   end component;
-   attribute BOX_TYPE of OR3 : component is "BLACK_BOX";
-   
-   attribute HU_SET of XLXI_2 : label is "XLXI_2_5";
+   attribute HU_SET of XLXI_2 : label is "XLXI_2_4";
 begin
    XLXN_12 <= '1';
    Control2 <= Control2_DUMMY;
+   Control7 <= Control7_DUMMY;
    XLXI_2 : D3_8E_HXILINX_Final_Project
       port map (A0=>OPC0,
                 A1=>OPC1,
@@ -496,17 +488,13 @@ begin
                 D2=>XLXN_96,
                 D3=>XLXN_98,
                 D4=>XLXN_100,
-                D5=>XLXN_101,
+                D5=>Control7_DUMMY,
                 D6=>XLXN_103,
                 D7=>XLXN_49);
    
    XLXI_17 : BUF
       port map (I=>XLXN_49,
                 O=>Control6);
-   
-   XLXI_18 : BUF
-      port map (I=>XLXN_49,
-                O=>Control7);
    
    XLXI_32 : OR2
       port map (I0=>XLXN_100,
@@ -525,16 +513,15 @@ begin
    
    XLXI_36 : OR5
       port map (I0=>XLXN_103,
-                I1=>XLXN_101,
+                I1=>Control7_DUMMY,
                 I2=>XLXN_98,
                 I3=>XLXN_96,
                 I4=>XLXN_93,
                 O=>Control1);
    
-   XLXI_37 : OR3
-      port map (I0=>XLXN_98,
-                I1=>XLXN_96,
-                I2=>XLXN_93,
+   XLXI_38 : OR2
+      port map (I0=>XLXN_96,
+                I1=>XLXN_93,
                 O=>Control3);
    
 end BEHAVIORAL;
@@ -565,8 +552,8 @@ end Program_Counter_MUSER_Final_Project;
 architecture BEHAVIORAL of Program_Counter_MUSER_Final_Project is
    attribute HU_SET     : string ;
    attribute BOX_TYPE   : string ;
-   signal XLXN_5  : std_logic;
-   signal XLXN_12 : std_logic;
+   signal XLXN_23 : std_logic;
+   signal XLXN_32 : std_logic;
    component CB4CLE_HXILINX_Final_Project
       port ( C   : in    std_logic; 
              CE  : in    std_logic; 
@@ -591,18 +578,18 @@ architecture BEHAVIORAL of Program_Counter_MUSER_Final_Project is
    end component;
    attribute BOX_TYPE of AND2 : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_6";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_5";
 begin
-   XLXN_5 <= '1';
+   XLXN_23 <= '1';
    XLXI_1 : CB4CLE_HXILINX_Final_Project
       port map (C=>CLK,
-                CE=>XLXN_5,
+                CE=>XLXN_23,
                 CLR=>RST,
                 D0=>D0,
                 D1=>D1,
                 D2=>D2,
                 D3=>D3,
-                L=>XLXN_12,
+                L=>XLXN_32,
                 CEO=>open,
                 Q0=>Q0,
                 Q1=>Q1,
@@ -610,10 +597,10 @@ begin
                 Q3=>Q3,
                 TC=>open);
    
-   XLXI_2 : AND2
+   XLXI_6 : AND2
       port map (I0=>CARRY,
                 I1=>LD,
-                O=>XLXN_12);
+                O=>XLXN_32);
    
 end BEHAVIORAL;
 
@@ -855,20 +842,20 @@ architecture BEHAVIORAL of mux4_4to1_MUSER_Final_Project is
 begin
    XLXI_1 : mux4_2to1_MUSER_Final_Project
       port map (S=>S1,
-                X(3 downto 0)=>C(3 downto 0),
-                Y(3 downto 0)=>A(3 downto 0),
+                X(3 downto 0)=>A(3 downto 0),
+                Y(3 downto 0)=>C(3 downto 0),
                 Z(3 downto 0)=>XLXN_1(3 downto 0));
    
    XLXI_2 : mux4_2to1_MUSER_Final_Project
       port map (S=>S1,
-                X(3 downto 0)=>D(3 downto 0),
-                Y(3 downto 0)=>B(3 downto 0),
+                X(3 downto 0)=>B(3 downto 0),
+                Y(3 downto 0)=>D(3 downto 0),
                 Z(3 downto 0)=>XLXN_2(3 downto 0));
    
    XLXI_3 : mux4_2to1_MUSER_Final_Project
       port map (S=>S0,
-                X(3 downto 0)=>XLXN_2(3 downto 0),
-                Y(3 downto 0)=>XLXN_1(3 downto 0),
+                X(3 downto 0)=>XLXN_1(3 downto 0),
+                Y(3 downto 0)=>XLXN_2(3 downto 0),
                 Z(3 downto 0)=>O(3 downto 0));
    
 end BEHAVIORAL;
@@ -893,11 +880,11 @@ end ALU_MUSER_Final_Project;
 
 architecture BEHAVIORAL of ALU_MUSER_Final_Project is
    attribute HU_SET     : string ;
-   signal CI       : std_logic;
-   signal X        : std_logic_vector (3 downto 0);
-   signal XLXN_283 : std_logic_vector (3 downto 0);
-   signal XLXN_284 : std_logic_vector (3 downto 0);
-   signal Y        : std_logic_vector (3 downto 0);
+   signal CI  : std_logic;
+   signal W   : std_logic_vector (3 downto 0);
+   signal X   : std_logic_vector (3 downto 0);
+   signal Y   : std_logic_vector (3 downto 0);
+   signal Z   : std_logic_vector (3 downto 0);
    component ADD4_HXILINX_Final_Project
       port ( A0  : in    std_logic; 
              A1  : in    std_logic; 
@@ -927,6 +914,11 @@ architecture BEHAVIORAL of ALU_MUSER_Final_Project is
              O3 : out   std_logic);
    end component;
    
+   component Left_Shift_MUSER_Final_Project
+      port ( I : in    std_logic_vector (3 downto 0); 
+             O : out   std_logic_vector (3 downto 0));
+   end component;
+   
    component mux4_4to1_MUSER_Final_Project
       port ( A  : in    std_logic_vector (3 downto 0); 
              B  : in    std_logic_vector (3 downto 0); 
@@ -937,21 +929,16 @@ architecture BEHAVIORAL of ALU_MUSER_Final_Project is
              O  : out   std_logic_vector (3 downto 0));
    end component;
    
-   component Left_Shift_MUSER_Final_Project
-      port ( I : in    std_logic_vector (3 downto 0); 
-             O : out   std_logic_vector (3 downto 0));
-   end component;
-   
    component Right_Shift_MUSER_Final_Project
       port ( I : in    std_logic_vector (3 downto 0); 
              O : out   std_logic_vector (3 downto 0));
    end component;
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_7";
-   attribute HU_SET of XLXI_7 : label is "XLXI_7_8";
+   attribute HU_SET of Adder : label is "Adder_6";
+   attribute HU_SET of Inverter : label is "Inverter_7";
 begin
    CI <= '0';
-   XLXI_1 : ADD4_HXILINX_Final_Project
+   Adder : ADD4_HXILINX_Final_Project
       port map (A0=>A(0),
                 A1=>A(1),
                 A2=>A(2),
@@ -968,7 +955,7 @@ begin
                 S2=>X(2),
                 S3=>X(3));
    
-   XLXI_7 : INV4_HXILINX_Final_Project
+   Inverter : INV4_HXILINX_Final_Project
       port map (I0=>A(3),
                 I1=>A(2),
                 I2=>A(1),
@@ -978,22 +965,22 @@ begin
                 O2=>Y(1),
                 O3=>Y(0));
    
-   XLXI_39 : mux4_4to1_MUSER_Final_Project
+   LeftShift : Left_Shift_MUSER_Final_Project
+      port map (I(3 downto 0)=>A(3 downto 0),
+                O(3 downto 0)=>W(3 downto 0));
+   
+   mux44to1 : mux4_4to1_MUSER_Final_Project
       port map (A(3 downto 0)=>X(3 downto 0),
-                B(3 downto 0)=>XLXN_283(3 downto 0),
-                C(3 downto 0)=>XLXN_284(3 downto 0),
+                B(3 downto 0)=>Z(3 downto 0),
+                C(3 downto 0)=>W(3 downto 0),
                 D(3 downto 0)=>Y(3 downto 0),
                 S0=>S0,
                 S1=>S1,
                 O(3 downto 0)=>O(3 downto 0));
    
-   XLXI_43 : Left_Shift_MUSER_Final_Project
+   RightShift : Right_Shift_MUSER_Final_Project
       port map (I(3 downto 0)=>A(3 downto 0),
-                O(3 downto 0)=>XLXN_284(3 downto 0));
-   
-   XLXI_44 : Right_Shift_MUSER_Final_Project
-      port map (I(3 downto 0)=>A(3 downto 0),
-                O(3 downto 0)=>XLXN_283(3 downto 0));
+                O(3 downto 0)=>Z(3 downto 0));
    
 end BEHAVIORAL;
 

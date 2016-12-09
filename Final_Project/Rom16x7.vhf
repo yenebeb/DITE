@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : Rom16x7.vhf
--- /___/   /\     Timestamp : 11/29/2016 13:25:13
+-- /___/   /\     Timestamp : 12/03/2016 19:23:40
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -54,13 +54,12 @@ architecture BEHAVIORAL of Rom16x7 is
    attribute INIT of ROM32X1 : component is "00000000";
    attribute BOX_TYPE of ROM32X1 : component is "BLACK_BOX";
    
-   attribute INIT of ROM1 : label is "00000103";
-   attribute INIT of ROM2 : label is "00000100";
-   attribute INIT of ROM3 : label is "00000001";
-   attribute INIT of ROM4 : label is "00000021";
-   attribute INIT of ROM5 : label is "000001CA";
-   attribute INIT of ROM6 : label is "00000344";
-   attribute INIT of ROM7 : label is "0000079C";
+   attribute INIT of ROM1 : label is "00000068";
+   attribute INIT of ROM3 : label is "00000008";
+   attribute INIT of ROM4 : label is "00000049";
+   attribute INIT of ROM5 : label is "000002FA";
+   attribute INIT of ROM6 : label is "00000146";
+   attribute INIT of ROM7 : label is "000007D4";
 begin
    XLXN_1 <= '0';
    XLXN_3 <= '0';
@@ -71,7 +70,7 @@ begin
    XLXN_9 <= '0';
    ROM1 : ROM32X1
    -- synopsys translate_off
-   generic map( INIT => x"00000103")
+   generic map( INIT => x"00000068")
    -- synopsys translate_on
       port map (A0=>A(0),
                 A1=>A(1),
@@ -82,7 +81,7 @@ begin
    
    ROM2 : ROM32X1
    -- synopsys translate_off
-   generic map( INIT => x"00000100")
+   generic map( INIT => x"00000000")
    -- synopsys translate_on
       port map (A0=>A(0),
                 A1=>A(1),
@@ -93,7 +92,7 @@ begin
    
    ROM3 : ROM32X1
    -- synopsys translate_off
-   generic map( INIT => x"00000001")
+   generic map( INIT => x"00000008")
    -- synopsys translate_on
       port map (A0=>A(0),
                 A1=>A(1),
@@ -104,7 +103,7 @@ begin
    
    ROM4 : ROM32X1
    -- synopsys translate_off
-   generic map( INIT => x"00000021")
+   generic map( INIT => x"00000049")
    -- synopsys translate_on
       port map (A0=>A(0),
                 A1=>A(1),
@@ -115,7 +114,7 @@ begin
    
    ROM5 : ROM32X1
    -- synopsys translate_off
-   generic map( INIT => x"000001CA")
+   generic map( INIT => x"000002FA")
    -- synopsys translate_on
       port map (A0=>A(0),
                 A1=>A(1),
@@ -126,7 +125,7 @@ begin
    
    ROM6 : ROM32X1
    -- synopsys translate_off
-   generic map( INIT => x"00000344")
+   generic map( INIT => x"00000146")
    -- synopsys translate_on
       port map (A0=>A(0),
                 A1=>A(1),
@@ -137,7 +136,7 @@ begin
    
    ROM7 : ROM32X1
    -- synopsys translate_off
-   generic map( INIT => x"0000079C")
+   generic map( INIT => x"000007D4")
    -- synopsys translate_on
       port map (A0=>A(0),
                 A1=>A(1),

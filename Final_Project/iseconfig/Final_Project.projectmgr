@@ -87,7 +87,9 @@
          <ClosedNode>/Final_Project C:|Users|Martijn|git|DITE|Final_Project|Final_Project.sch</ClosedNode>
          <ClosedNode>/Final_Project C:|Users|Martijn|git|DITE|Final_Project|Final_Project.sch/XLXI_24 - ALU</ClosedNode>
          <ClosedNode>/Final_Project C:|Users|Martijn|git|DITE|Final_Project|Final_Project.sch/XLXI_25 - Rom16x7</ClosedNode>
+         <ClosedNode>/Final_Project_Final_Project_sch_tb - behavioral C:|Users|Martijn|git|DITE|Final_Project|Final_Project_test.vhd</ClosedNode>
          <ClosedNode>/Final_Project_Final_Project_sch_tb - behavioral C:|Users|Martijn|git|DITE|Final_Project|Final_Project_test.vhd/UUT - Final_Project</ClosedNode>
+         <ClosedNode>/Instruction_Decoder_Instruction_Decoder_sch_tb - behavioral C:|Users|Martijn|git|DITE|Final_Project|Instruction_Decoder_test.vhd</ClosedNode>
          <ClosedNode>/Left_Shift_Left_Shift_sch_tb - behavioral C:|Users|Martijn|git|DITE|Final_Project|Left_Shift_test.vhd</ClosedNode>
          <ClosedNode>/Program_Counter_Program_Counter_sch_tb - behavioral C:|Users|Martijn|git|DITE|Final_Project|Program_Counter_test.vhd</ClosedNode>
          <ClosedNode>/Register_A C:|Users|Martijn|git|DITE|Final_Project|Register_A.sch</ClosedNode>
@@ -98,17 +100,20 @@
          <ClosedNode>/mux4_4to1 C:|Users|Martijn|git|DITE|Final_Project|mux4_4to1.sch</ClosedNode>
          <ClosedNode>/mux4_4to1_mux4_4to1_sch_tb - behavioral C:|Users|Martijn|git|DITE|Final_Project|mux4_4to1_test.vhd</ClosedNode>
          <ClosedNode>/mux4_4to1_mux4_4to1_sch_tb - behavioral C:|Users|Martijn|git|DITE|Final_Project|mux4_4to1_test.vhd/UUT - mux4_4to1</ClosedNode>
+         <ClosedNode>/testbench - behavior C:|Users|Martijn|git|DITE|Final_Project|ALU_test.vhd</ClosedNode>
          <ClosedNode>/testbench - behavior C:|Users|Martijn|git|DITE|Final_Project|ALU_test.vhd/uut - ALU</ClosedNode>
          <ClosedNode>/testbench - behavior C:|Users|Martijn|git|DITE|Final_Project|ALU_test.vhd/uut - ALU/XLXI_39 - mux4_4to1</ClosedNode>
          <ClosedNode>/testbench - behavior C:|Users|Martijn|git|DITE|Final_Project|Final_Project_test.vhd</ClosedNode>
          <ClosedNode>/testbench - behavior C:|Users|Martijn|git|DITE|Final_Project|Rom16x7_test.vhd</ClosedNode>
       </ClosedNodes>
-      <SelectedItems/>
+      <SelectedItems>
+         <SelectedItem>Rom16x7_Rom16x7_sch_tb - behavioral (C:/Users/Martijn/git/DITE/Final_Project/Rom16x7_test.vhd)</SelectedItem>
+      </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000022a000000020000000000000000000000000200000064ffffffff0000008100000003000000020000022a0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>UUT - Instruction_Decoder (C:/Users/Martijn/git/DITE/Final_Project/Instruction_Decoder.sch)</CurrentItem>
+      <CurrentItem>Rom16x7_Rom16x7_sch_tb - behavioral (C:/Users/Martijn/git/DITE/Final_Project/Rom16x7_test.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -116,13 +121,13 @@
          <ClosedNode>Design Utilities</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem/>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000d2000000010000000100000000000000000000000064ffffffff000000810000000000000001000000d20000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem/>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="DESUT_SCHEMATIC" guiview="Process" >
       <ClosedNodes>
@@ -142,12 +147,12 @@
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem>Simulate Behavioral Model</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000d2000000010000000100000000000000000000000064ffffffff000000810000000000000001000000d20000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem>Simulate Behavioral Model</CurrentItem>
    </ItemView>
 </Project>

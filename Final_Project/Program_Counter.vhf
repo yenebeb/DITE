@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : Program_Counter.vhf
--- /___/   /\     Timestamp : 11/29/2016 14:29:16
+-- /___/   /\     Timestamp : 12/03/2016 18:58:26
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -99,8 +99,8 @@ end Program_Counter;
 architecture BEHAVIORAL of Program_Counter is
    attribute HU_SET     : string ;
    attribute BOX_TYPE   : string ;
-   signal XLXN_5  : std_logic;
-   signal XLXN_12 : std_logic;
+   signal XLXN_23 : std_logic;
+   signal XLXN_32 : std_logic;
    component CB4CLE_HXILINX_Program_Counter
       port ( C   : in    std_logic; 
              CE  : in    std_logic; 
@@ -127,16 +127,16 @@ architecture BEHAVIORAL of Program_Counter is
    
    attribute HU_SET of XLXI_1 : label is "XLXI_1_0";
 begin
-   XLXN_5 <= '1';
+   XLXN_23 <= '1';
    XLXI_1 : CB4CLE_HXILINX_Program_Counter
       port map (C=>CLK,
-                CE=>XLXN_5,
+                CE=>XLXN_23,
                 CLR=>RST,
                 D0=>D0,
                 D1=>D1,
                 D2=>D2,
                 D3=>D3,
-                L=>XLXN_12,
+                L=>XLXN_32,
                 CEO=>open,
                 Q0=>Q0,
                 Q1=>Q1,
@@ -144,10 +144,10 @@ begin
                 Q3=>Q3,
                 TC=>open);
    
-   XLXI_2 : AND2
+   XLXI_6 : AND2
       port map (I0=>CARRY,
                 I1=>LD,
-                O=>XLXN_12);
+                O=>XLXN_32);
    
 end BEHAVIORAL;
 

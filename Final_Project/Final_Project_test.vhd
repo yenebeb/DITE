@@ -39,18 +39,18 @@ BEGIN
 -- *** Test Bench - User Defined Section ***
    clk_gen : PROCESS
 	  BEGIN
-		  for i in 1 to 100 loop
+		  for i in 1 to 11 loop
 			  Clock <= '1';
-			  wait for 50 ns;
+			  wait for 25 ns;
 			  Clock <= '0';
-			  wait for 50 ns;
+			  wait for 25 ns;
 		  end loop;
 		  Wait;
 	  END PROCESS;
 	
 	tb : PROCESS
    BEGIN
-		Reset <= '0';
+		Reset <= '1', '0' after 5 ns;
       WAIT; -- will wait forever
    END PROCESS;
 -- *** End Test Bench - User Defined Section ***

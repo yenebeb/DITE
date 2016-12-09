@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : Instruction_Decoder.vhf
--- /___/   /\     Timestamp : 11/30/2016 11:38:49
+-- /___/   /\     Timestamp : 12/02/2016 08:44:44
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -106,9 +106,9 @@ architecture BEHAVIORAL of Instruction_Decoder is
    signal XLXN_96        : std_logic;
    signal XLXN_98        : std_logic;
    signal XLXN_100       : std_logic;
-   signal XLXN_101       : std_logic;
    signal XLXN_103       : std_logic;
    signal Control2_DUMMY : std_logic;
+   signal Control7_DUMMY : std_logic;
    component D3_8E_HXILINX_Instruction_Decoder
       port ( A0 : in    std_logic; 
              A1 : in    std_logic; 
@@ -147,18 +147,11 @@ architecture BEHAVIORAL of Instruction_Decoder is
    end component;
    attribute BOX_TYPE of OR5 : component is "BLACK_BOX";
    
-   component OR3
-      port ( I0 : in    std_logic; 
-             I1 : in    std_logic; 
-             I2 : in    std_logic; 
-             O  : out   std_logic);
-   end component;
-   attribute BOX_TYPE of OR3 : component is "BLACK_BOX";
-   
-   attribute HU_SET of XLXI_2 : label is "XLXI_2_4";
+   attribute HU_SET of XLXI_2 : label is "XLXI_2_0";
 begin
    XLXN_12 <= '1';
    Control2 <= Control2_DUMMY;
+   Control7 <= Control7_DUMMY;
    XLXI_2 : D3_8E_HXILINX_Instruction_Decoder
       port map (A0=>OPC0,
                 A1=>OPC1,
@@ -169,17 +162,13 @@ begin
                 D2=>XLXN_96,
                 D3=>XLXN_98,
                 D4=>XLXN_100,
-                D5=>XLXN_101,
+                D5=>Control7_DUMMY,
                 D6=>XLXN_103,
                 D7=>XLXN_49);
    
    XLXI_17 : BUF
       port map (I=>XLXN_49,
                 O=>Control6);
-   
-   XLXI_18 : BUF
-      port map (I=>XLXN_49,
-                O=>Control7);
    
    XLXI_32 : OR2
       port map (I0=>XLXN_100,
@@ -198,16 +187,15 @@ begin
    
    XLXI_36 : OR5
       port map (I0=>XLXN_103,
-                I1=>XLXN_101,
+                I1=>Control7_DUMMY,
                 I2=>XLXN_98,
                 I3=>XLXN_96,
                 I4=>XLXN_93,
                 O=>Control1);
    
-   XLXI_37 : OR3
-      port map (I0=>XLXN_98,
-                I1=>XLXN_96,
-                I2=>XLXN_93,
+   XLXI_38 : OR2
+      port map (I0=>XLXN_96,
+                I1=>XLXN_93,
                 O=>Control3);
    
 end BEHAVIORAL;

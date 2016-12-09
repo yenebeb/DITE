@@ -44,7 +44,7 @@
             <line x2="112" y1="32" y2="32" x1="144" />
         </blockdef>
         <block symbolname="rom32x1" name="ROM1">
-            <attr value="00000103" name="INIT">
+            <attr value="00000068" name="INIT">
                 <trait verilog="all:0 dp:1nosynth wsynop:1 wsynth:1" />
                 <trait vhdl="all:0 gm:1nosynth wa:1 wd:1" />
                 <trait valuetype="BitVector 32 h" />
@@ -58,7 +58,7 @@
             <blockpin signalname="D(0)" name="O" />
         </block>
         <block symbolname="rom32x1" name="ROM2">
-            <attr value="00000100" name="INIT">
+            <attr value="00000000" name="INIT">
                 <trait verilog="all:0 dp:1nosynth wsynop:1 wsynth:1" />
                 <trait vhdl="all:0 gm:1nosynth wa:1 wd:1" />
                 <trait valuetype="BitVector 32 h" />
@@ -72,7 +72,7 @@
             <blockpin signalname="D(1)" name="O" />
         </block>
         <block symbolname="rom32x1" name="ROM3">
-            <attr value="00000001" name="INIT">
+            <attr value="00000008" name="INIT">
                 <trait verilog="all:0 dp:1nosynth wsynop:1 wsynth:1" />
                 <trait vhdl="all:0 gm:1nosynth wa:1 wd:1" />
                 <trait valuetype="BitVector 32 h" />
@@ -86,7 +86,7 @@
             <blockpin signalname="D(2)" name="O" />
         </block>
         <block symbolname="rom32x1" name="ROM4">
-            <attr value="00000021" name="INIT">
+            <attr value="00000049" name="INIT">
                 <trait verilog="all:0 dp:1nosynth wsynop:1 wsynth:1" />
                 <trait vhdl="all:0 gm:1nosynth wa:1 wd:1" />
                 <trait valuetype="BitVector 32 h" />
@@ -100,7 +100,7 @@
             <blockpin signalname="D(3)" name="O" />
         </block>
         <block symbolname="rom32x1" name="ROM5">
-            <attr value="000001CA" name="INIT">
+            <attr value="000002FA" name="INIT">
                 <trait verilog="all:0 dp:1nosynth wsynop:1 wsynth:1" />
                 <trait vhdl="all:0 gm:1nosynth wa:1 wd:1" />
                 <trait valuetype="BitVector 32 h" />
@@ -114,7 +114,7 @@
             <blockpin signalname="D(4)" name="O" />
         </block>
         <block symbolname="rom32x1" name="ROM6">
-            <attr value="00000344" name="INIT">
+            <attr value="00000146" name="INIT">
                 <trait verilog="all:0 dp:1nosynth wsynop:1 wsynth:1" />
                 <trait vhdl="all:0 gm:1nosynth wa:1 wd:1" />
                 <trait valuetype="BitVector 32 h" />
@@ -128,7 +128,7 @@
             <blockpin signalname="D(5)" name="O" />
         </block>
         <block symbolname="rom32x1" name="ROM7">
-            <attr value="0000079C" name="INIT">
+            <attr value="000007D4" name="INIT">
                 <trait verilog="all:0 dp:1nosynth wsynop:1 wsynth:1" />
                 <trait vhdl="all:0 gm:1nosynth wa:1 wd:1" />
                 <trait valuetype="BitVector 32 h" />

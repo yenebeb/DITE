@@ -23,32 +23,32 @@
         <port polarity="Input" name="A(3:0)" />
         <port polarity="Output" name="O(3:0)" />
         <blockdef name="mux4_2to1">
-            <timestamp>2016-11-22T11:41:14</timestamp>
+            <timestamp>2016-11-30T10:24:24</timestamp>
             <rect width="128" x="64" y="-192" height="128" />
             <line x2="96" y1="-64" y2="0" x1="96" />
-            <line x2="0" y1="-96" y2="-96" x1="64" />
-            <rect width="64" x="0" y="-108" height="24" />
             <line x2="0" y1="-160" y2="-160" x1="64" />
             <rect width="64" x="0" y="-172" height="24" />
+            <line x2="0" y1="-96" y2="-96" x1="64" />
+            <rect width="64" x="0" y="-108" height="24" />
             <line x2="256" y1="-160" y2="-160" x1="192" />
             <rect width="64" x="192" y="-172" height="24" />
         </blockdef>
         <block symbolname="mux4_2to1" name="XLXI_1">
             <blockpin signalname="S1" name="S" />
-            <blockpin signalname="C(3:0)" name="X(3:0)" />
-            <blockpin signalname="A(3:0)" name="Y(3:0)" />
+            <blockpin signalname="A(3:0)" name="X(3:0)" />
+            <blockpin signalname="C(3:0)" name="Y(3:0)" />
             <blockpin signalname="XLXN_1(3:0)" name="Z(3:0)" />
         </block>
         <block symbolname="mux4_2to1" name="XLXI_2">
             <blockpin signalname="S1" name="S" />
-            <blockpin signalname="D(3:0)" name="X(3:0)" />
-            <blockpin signalname="B(3:0)" name="Y(3:0)" />
+            <blockpin signalname="B(3:0)" name="X(3:0)" />
+            <blockpin signalname="D(3:0)" name="Y(3:0)" />
             <blockpin signalname="XLXN_2(3:0)" name="Z(3:0)" />
         </block>
         <block symbolname="mux4_2to1" name="XLXI_3">
             <blockpin signalname="S0" name="S" />
-            <blockpin signalname="XLXN_2(3:0)" name="X(3:0)" />
-            <blockpin signalname="XLXN_1(3:0)" name="Y(3:0)" />
+            <blockpin signalname="XLXN_1(3:0)" name="X(3:0)" />
+            <blockpin signalname="XLXN_2(3:0)" name="Y(3:0)" />
             <blockpin signalname="O(3:0)" name="Z(3:0)" />
         </block>
     </netlist>

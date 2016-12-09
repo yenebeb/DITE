@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : ALU.vhf
--- /___/   /\     Timestamp : 11/28/2016 13:58:13
+-- /___/   /\     Timestamp : 12/01/2016 14:02:16
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -223,12 +223,12 @@ architecture BEHAVIORAL of mux4_2to1_MUSER_ALU is
 begin
    XLXI_1 : AND2
       port map (I0=>X(0),
-                I1=>S,
+                I1=>XLXN_7,
                 O=>XLXN_8);
    
    XLXI_3 : AND2
       port map (I0=>Y(0),
-                I1=>XLXN_7,
+                I1=>S,
                 O=>XLXN_9);
    
    XLXI_6 : INV
@@ -242,12 +242,12 @@ begin
    
    XLXI_11 : AND2
       port map (I0=>X(1),
-                I1=>S,
+                I1=>XLXN_26,
                 O=>XLXN_27);
    
    XLXI_12 : AND2
       port map (I0=>Y(1),
-                I1=>XLXN_26,
+                I1=>S,
                 O=>XLXN_29);
    
    XLXI_13 : INV
@@ -261,12 +261,12 @@ begin
    
    XLXI_15 : AND2
       port map (I0=>X(2),
-                I1=>S,
+                I1=>XLXN_30,
                 O=>XLXN_31);
    
    XLXI_16 : AND2
       port map (I0=>Y(2),
-                I1=>XLXN_30,
+                I1=>S,
                 O=>XLXN_33);
    
    XLXI_17 : INV
@@ -280,12 +280,12 @@ begin
    
    XLXI_54 : AND2
       port map (I0=>X(3),
-                I1=>S,
+                I1=>XLXN_87,
                 O=>XLXN_84);
    
    XLXI_55 : AND2
       port map (I0=>Y(3),
-                I1=>XLXN_87,
+                I1=>S,
                 O=>XLXN_86);
    
    XLXI_56 : OR2
@@ -330,20 +330,20 @@ architecture BEHAVIORAL of mux4_4to1_MUSER_ALU is
 begin
    XLXI_1 : mux4_2to1_MUSER_ALU
       port map (S=>S1,
-                X(3 downto 0)=>C(3 downto 0),
-                Y(3 downto 0)=>A(3 downto 0),
+                X(3 downto 0)=>A(3 downto 0),
+                Y(3 downto 0)=>C(3 downto 0),
                 Z(3 downto 0)=>XLXN_1(3 downto 0));
    
    XLXI_2 : mux4_2to1_MUSER_ALU
       port map (S=>S1,
-                X(3 downto 0)=>D(3 downto 0),
-                Y(3 downto 0)=>B(3 downto 0),
+                X(3 downto 0)=>B(3 downto 0),
+                Y(3 downto 0)=>D(3 downto 0),
                 Z(3 downto 0)=>XLXN_2(3 downto 0));
    
    XLXI_3 : mux4_2to1_MUSER_ALU
       port map (S=>S0,
-                X(3 downto 0)=>XLXN_2(3 downto 0),
-                Y(3 downto 0)=>XLXN_1(3 downto 0),
+                X(3 downto 0)=>XLXN_1(3 downto 0),
+                Y(3 downto 0)=>XLXN_2(3 downto 0),
                 Z(3 downto 0)=>O(3 downto 0));
    
 end BEHAVIORAL;
@@ -368,11 +368,11 @@ end ALU;
 
 architecture BEHAVIORAL of ALU is
    attribute HU_SET     : string ;
-   signal CI       : std_logic;
-   signal X        : std_logic_vector (3 downto 0);
-   signal XLXN_283 : std_logic_vector (3 downto 0);
-   signal XLXN_284 : std_logic_vector (3 downto 0);
-   signal Y        : std_logic_vector (3 downto 0);
+   signal CI  : std_logic;
+   signal W   : std_logic_vector (3 downto 0);
+   signal X   : std_logic_vector (3 downto 0);
+   signal Y   : std_logic_vector (3 downto 0);
+   signal Z   : std_logic_vector (3 downto 0);
    component ADD4_HXILINX_ALU
       port ( A0  : in    std_logic; 
              A1  : in    std_logic; 
@@ -402,6 +402,11 @@ architecture BEHAVIORAL of ALU is
              O3 : out   std_logic);
    end component;
    
+   component Left_Shift_MUSER_ALU
+      port ( I : in    std_logic_vector (3 downto 0); 
+             O : out   std_logic_vector (3 downto 0));
+   end component;
+   
    component mux4_4to1_MUSER_ALU
       port ( A  : in    std_logic_vector (3 downto 0); 
              B  : in    std_logic_vector (3 downto 0); 
@@ -412,21 +417,16 @@ architecture BEHAVIORAL of ALU is
              O  : out   std_logic_vector (3 downto 0));
    end component;
    
-   component Left_Shift_MUSER_ALU
-      port ( I : in    std_logic_vector (3 downto 0); 
-             O : out   std_logic_vector (3 downto 0));
-   end component;
-   
    component Right_Shift_MUSER_ALU
       port ( I : in    std_logic_vector (3 downto 0); 
              O : out   std_logic_vector (3 downto 0));
    end component;
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_2";
-   attribute HU_SET of XLXI_7 : label is "XLXI_7_3";
+   attribute HU_SET of Adder : label is "Adder_6";
+   attribute HU_SET of Inverter : label is "Inverter_7";
 begin
    CI <= '0';
-   XLXI_1 : ADD4_HXILINX_ALU
+   Adder : ADD4_HXILINX_ALU
       port map (A0=>A(0),
                 A1=>A(1),
                 A2=>A(2),
@@ -443,7 +443,7 @@ begin
                 S2=>X(2),
                 S3=>X(3));
    
-   XLXI_7 : INV4_HXILINX_ALU
+   Inverter : INV4_HXILINX_ALU
       port map (I0=>A(3),
                 I1=>A(2),
                 I2=>A(1),
@@ -453,22 +453,22 @@ begin
                 O2=>Y(1),
                 O3=>Y(0));
    
-   XLXI_39 : mux4_4to1_MUSER_ALU
+   LeftShift : Left_Shift_MUSER_ALU
+      port map (I(3 downto 0)=>A(3 downto 0),
+                O(3 downto 0)=>W(3 downto 0));
+   
+   mux44to1 : mux4_4to1_MUSER_ALU
       port map (A(3 downto 0)=>X(3 downto 0),
-                B(3 downto 0)=>XLXN_283(3 downto 0),
-                C(3 downto 0)=>XLXN_284(3 downto 0),
+                B(3 downto 0)=>Z(3 downto 0),
+                C(3 downto 0)=>W(3 downto 0),
                 D(3 downto 0)=>Y(3 downto 0),
                 S0=>S0,
                 S1=>S1,
                 O(3 downto 0)=>O(3 downto 0));
    
-   XLXI_43 : Left_Shift_MUSER_ALU
+   RightShift : Right_Shift_MUSER_ALU
       port map (I(3 downto 0)=>A(3 downto 0),
-                O(3 downto 0)=>XLXN_284(3 downto 0));
-   
-   XLXI_44 : Right_Shift_MUSER_ALU
-      port map (I(3 downto 0)=>A(3 downto 0),
-                O(3 downto 0)=>XLXN_283(3 downto 0));
+                O(3 downto 0)=>Z(3 downto 0));
    
 end BEHAVIORAL;
 
